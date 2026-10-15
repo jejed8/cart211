@@ -9,5 +9,5 @@
 
 ## Assessment 03 & 04
 
-- [Ocean Vuong - Workshop Brief](https://github.com/jejed8/cart211/assessement/assessement_03)
+- [Ocean Vuong - Workshop Brief](https://github.com/jejed8/cart211/assessement/assessement_03/index.html)
   
