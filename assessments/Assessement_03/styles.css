@@ -1,6 +1,16 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
+
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+
 /*
 a {
     color: black;
@@ -25,11 +35,20 @@ nav a {
     color: black;
     font-weight: bold;
     display: block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
 }
 
 nav a:hover {
-    color: darkgrey;
+    letter-spacing: 4px;
 }
+
+/*
+nav a:hover {
+  color: darkgrey;
+}
+*/
 
 #wrapper {
     margin-top: 50px;
@@ -59,8 +78,11 @@ main h3 {
 }
 
 header img {
+    position: relative;
     width: 100%;
+    filter: grayscale('100%');
 }
+
 
 section {
     margin-bottom: 30px;
@@ -81,7 +103,7 @@ section {
     min-width: 100%;
 }
 
-.books > div {
+.books>div {
     text-align: center;
     padding: 10px;
 }
@@ -93,6 +115,8 @@ section {
 article figure figcaption {
     margin-top: 5px;
     font-size: 12px;
+    bottom: 0;
+    position: relative;
 }
 
 article h3 {
@@ -111,4 +135,60 @@ footer {
     font-weight: lighter;
     text-align: right;
     font-style: italic;
+}
+
+
+
+@media (max-width: 480px) {
+    nav {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 20px 0;
+        line-height: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #000;
+        z-index: 1000;
+        color: white;
+        float: none;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    #wrapper {
+        margin-top: 500px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        line-height: 150%;
+    }
+
+    main {
+        text-align: justify;
+    }
+
+
+
+    .books {
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+
+    .books figcaption {
+        font-size: smaller;
+    }
+
+    /*
+    nav a:hover {
+        letter-spacing: none;
+    }
+    */
 }
